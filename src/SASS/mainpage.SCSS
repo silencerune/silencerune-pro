@@ -1,0 +1,73 @@
+.settitle {
+  position:relative;
+  background: rgba(0,0,0,1.0); 
+  text-align: center;
+  color: white;
+  font-size:32px;
+  z-index: 100;
+}
+
+.thebackground{
+  background-color:#000000;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.blockset{
+  position:relative;
+  padding:10px;
+  width:auto;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  
+}
+
+.comicComponent{
+  display:inline-block;
+}
+.InTheLabel{
+  position:relative;
+  width:300px;
+  height:250px;
+  background-color:rgba(231,169,24,0.3);
+  margin-left:auto;
+  margin-right:auto;
+  margin:25px;
+  text-align:center;
+  display:inline-block;
+  
+}
+.labelName{
+  // width:250px;
+  left:25px;
+  top:215px;
+  color:red;
+  text-align:center;
+}
+.labelImg{
+  width:250px;
+  height:200px;
+  background-color:rgba(255,125,75,0.3);
+  background-repeat:no-repeat;
+  background-size:250px 200px;
+  margin-left:25px;
+  margin-right:25px;
+  margin-top:10px;
+  text-align:center;
+}
+
+@media screen and (max-width:600px)
+{
+.blockset{
+  width:300px;
+  height:750px;
+  text-align:center;
+  .label
+  {
+    position:relative;
+  }
+}
+
+
+}

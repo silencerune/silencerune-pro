@@ -1,0 +1,42 @@
+.header{
+  height:61px;
+  background-color:black;
+  .innerword{
+  background-color:white;
+  width:20px
+  }
+}
+.select{
+  position:relative;
+  background: rgba(0,0,0,1.0); 
+  text-align: center;
+  color: white;
+  font-size:32px;
+  margin:25px;
+  text-decoration-line: none;
+  .link{
+    color: white;
+  }  
+ 
+}
+.select:hover::before{
+  opacity: 1;
+  width: 20px;
+  // display:inline-block;
+}
+.select::before{
+  content: "<";
+  opacity: 0;
+  width: 0px;
+ //  opacity: 1;
+ display:inline-block;
+  transition: width 1s,opacity 2s linear ;
+  -webkit-transition: width 1s,opacity 2s linear ;
+}
+
+a:link{
+  text-decoration: none;
+}
+body{
+  background-color:black;
+}
