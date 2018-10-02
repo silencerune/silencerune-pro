@@ -1,4 +1,4 @@
-# silencerune-pro
+# git-deploy-template
 
 > A Vue.js project
 
