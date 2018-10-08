@@ -4,10 +4,7 @@
   "description": "A Vue.js project",
   "author": "",
   "private": true,
-  "homepage": "https://silencerune.github.io/silencerune-pro/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
@@ -17,14 +14,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^7.2.3",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-jest": "^21.0.2",
     "babel-loader": "^7.1.1",
@@ -64,7 +60,6 @@
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
-    "push-dir": "^0.4.1",
     "rimraf": "^2.6.0",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
