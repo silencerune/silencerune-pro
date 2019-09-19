@@ -24,14 +24,7 @@
     <div id="app">
 
         <!-- <div class="storyset">
-        </div> -->
-
-
-
-
-
-
-
+            </div> -->
 
 
 
@@ -47,22 +40,22 @@
 
                     <div v-for="(charatelement, key2) in targetset.chaterdetail" class="charaitem">
                         <!-- <el-tabs @tab-click="handleClick">
-                            <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;"> -->
+                                <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;"> -->
 
 
                         <charter-element :charater-element="charatelement"></charter-element>
                         <!-- </el-tab-pane>
-                        </el-tabs> -->
+                            </el-tabs> -->
                         <!-- <div>
-
-                            <div class="charaterElement" v-style="{ 'background-image': `url(${charatelement.img})`}">
-                                <div class="leftcover">
-                                    <div class="middlecover">{{charatelement.name}}</div>
+    
+                                <div class="charaterElement" v-style="{ 'background-image': `url(${charatelement.img})`}">
+                                    <div class="leftcover">
+                                        <div class="middlecover">{{charatelement.name}}</div>
+                                    </div>
+                                    <div class="rightcover"></div>
+    
                                 </div>
-                                <div class="rightcover"></div>
-
-                            </div>
-                        </div> -->
+                            </div> -->
 
 
 
@@ -90,15 +83,15 @@
             </span>
         </el-dialog>
         <!-- <div style="margin-left: 110px;">
-
-            <div style="margin-left: 110px;" class="page page1 paper">
-                <div class="leftcover">
-                    <div class="middlecover">水中央</div>
+    
+                <div style="margin-left: 110px;" class="page page1 paper">
+                    <div class="leftcover">
+                        <div class="middlecover">水中央</div>
+                    </div>
+                    <div class="rightcover"></div>
+    
                 </div>
-                <div class="rightcover"></div>
-
-            </div>
-        </div> -->
+            </div> -->
 
 
         <el-tabs @tab-click="handleClick">
@@ -112,21 +105,21 @@
 
             </el-tab-pane>
             <!-- <el-tab-pane label="屏幕那端系列">
-                <div style="margin-left: 110px; margin-top: 82px;  margin-bottom: 82px;">
-                    <single-book v-for="(bookItem,key) in crossTheWindow" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
-                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" v-on:click-story="storyPaper"
-                        v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
-                </div>
-
-            </el-tab-pane>
-            <el-tab-pane label="短篇集">
-                <div style="margin-left: 110px; margin-top: 82px;  margin-bottom: 82px;">
-                    <single-book v-for="(bookItem,key) in short" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
-                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" v-on:click-story="storyPaper"
-                        v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
-                </div>
-
-            </el-tab-pane> -->
+                    <div style="margin-left: 110px; margin-top: 82px;  margin-bottom: 82px;">
+                        <single-book v-for="(bookItem,key) in crossTheWindow" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
+                            :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" v-on:click-story="storyPaper"
+                            v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
+                    </div>
+    
+                </el-tab-pane>
+                <el-tab-pane label="短篇集">
+                    <div style="margin-left: 110px; margin-top: 82px;  margin-bottom: 82px;">
+                        <single-book v-for="(bookItem,key) in short" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
+                            :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" v-on:click-story="storyPaper"
+                            v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
+                    </div>
+    
+                </el-tab-pane> -->
 
         </el-tabs>
 
