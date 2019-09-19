@@ -1,0 +1,162 @@
+<html lang="zh-CN">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <title>JavaScript Study</title>
+
+    <link rel="stylesheet" href="css/bookStyle.css">
+    <link rel="stylesheet" href="css/storyset.css">
+    <script src="JS/singleBook.js"></script>
+    <script src="JS/charterElement.js"></script>
+
+    <script src="JS/chartdata.js"></script>
+    <script src="JS/bookdata.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body class="bodyset">
+
+
+    <div id="app">
+
+        <!-- <div class="storyset">
+            </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <el-button type="text" @click="dialogVisible = true">点击打开 Dialog</el-button> -->
+        <el-dialog title="提示" :visible.sync="dialogVisible" width="90%" :before-close="handleClose">
+            <!-- <span>{{ charaterList}}</span> -->
+
+            <el-tabs @tab-click="handleClick">
+                <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;">
+
+                    <div v-for="(charatelement, key2) in targetset.chaterdetail" class="charaitem">
+                        <!-- <el-tabs @tab-click="handleClick">
+                                <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in charaterList" style="text-align: center;"> -->
+
+
+                        <charter-element :charater-element="charatelement"></charter-element>
+                        <!-- </el-tab-pane>
+                            </el-tabs> -->
+                        <!-- <div>
+    
+                                <div class="charaterElement" v-style="{ 'background-image': `url(${charatelement.img})`}">
+                                    <div class="leftcover">
+                                        <div class="middlecover">{{charatelement.name}}</div>
+                                    </div>
+                                    <div class="rightcover"></div>
+    
+                                </div>
+                            </div> -->
+
+
+
+                    </div>
+
+                </el-tab-pane>
+            </el-tabs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <span slot="footer" class="dialog-footer">
+                <el-button @click="dialogVisible = false">取 消</el-button>
+                <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+            </span>
+        </el-dialog>
+        <!-- <div style="margin-left: 110px;">
+    
+                <div style="margin-left: 110px;" class="page page1 paper">
+                    <div class="leftcover">
+                        <div class="middlecover">水中央</div>
+                    </div>
+                    <div class="rightcover"></div>
+    
+                </div>
+            </div> -->
+
+
+        <el-tabs @tab-click="handleClick">
+            <el-tab-pane :label="targetset.labelName" v-for="(targetset,key1) in storySerise">
+
+                <div class="bookshore">
+                    <single-book v-for="(bookItem,key2) in targetset.storysDetail" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
+                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" v-on:click-story="storyPaper"
+                        v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
+                </div>
+
+            </el-tab-pane>
+
+
+        </el-tabs>
+
+
+    </div>
+
+    <script>
+
+
+
+        var app = new Vue({
+            el: '#app',
+
+            data: {
+                dialogVisible: false,
+                middlewater: bookData_middleWater,
+                crossTheWindow: bookData_crossTheWindow,
+                short: bookData_short,
+                storySerise: allSerise,
+                storyTarget: [0, 0],
+                charaterList: [],
+            },
+            methods: {
+                storyPaper(covername) {
+                    this.dialogVisible = true;
+                    this.storyTarget = covername.split('-');
+                    this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
+                    console.log(this.storySerise[this.storyTarget[0] - 1].chaterAll);
+                    // alert(covername + 'paper')
+                },
+                comiclink(covername) {
+                    alert(covername + 'link')
+                },
+                charater(covername) {
+                    alert(covername + 'char')
+                },
+                handleClose(done) {
+                    done();
+                }
+
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>
