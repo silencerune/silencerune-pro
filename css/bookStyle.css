@@ -1,0 +1,339 @@
+.bookitem {
+    transform: rotate(26deg);
+    left: 220px;
+    top: 100px;
+    display: inline-block;
+    margin-left: 201px;
+    margin-top: 36px;
+    margin-bottom: 74px;
+
+}
+
+.trigger {
+    display: block;
+
+    width: 200px;
+    height: 250px;
+
+    position: relative;
+
+}
+
+
+.cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 0%;
+    transition: transform 0.5s;
+    z-index: 3;
+    position: relative;
+}
+
+.page1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 0%;
+    transition: transform 1.0s;
+    z-index: 2;
+
+}
+
+.page2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 0%;
+    transition: transform 1.5s;
+    z-index: 2;
+
+}
+
+.page3 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 0%;
+    transition: transform 2.0s;
+    z-index: 2;
+
+}
+
+.page4 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: 0%;
+    transition: transform 2.5s;
+    z-index: 2;
+
+}
+
+ .trigger:hover .cover {
+  
+    transform: rotateY(-30deg);
+    transition: transform 0.5s;
+
+}
+
+/*
+.trigger:hover .page1 {
+    transform: perspective(10000px) rotateY(-150deg);
+    z-index: 3;
+
+} */
+
+.page {
+    border-radius: 0 9px 15px 0;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.plane {
+
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.bookside {
+    width: 20px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: -11px;
+
+
+}
+
+.back {
+    background: black;
+    transform: rotateY(180deg);
+   
+}
+
+.front {
+    background: black;
+ 
+    background-size: cover;
+}
+
+.bookback {
+    display: block;
+    background-image: url('../img/PAPER.jpg');
+    z-index: -2;
+    border-radius: 0 9px 15px 0;
+}
+
+.paper {
+    background-image: url('../img/PAPER.jpg');
+}
+
+.coverimage {
+    width: 180px;
+    height: 170px;
+    background: black;
+    margin: 10px;
+    border-radius: 15px;
+    z-index: 0;
+    transform: translateY(-250px);
+    position: inherit;
+    opacity: 0.7;
+    transition: color 0.5s box-shadow 0.5s;
+
+}
+
+.coverimagetext {
+    top: 50px;
+    left: 50px;
+    position: absolute;
+}
+
+.coverimage:hover {
+
+    box-shadow: 0px 0px 0px 8px rgba(165, 42, 42, 0.5);
+}
+
+.bookmark {
+    width: 26px;
+    background: cornflowerblue;
+    height: 131px;
+    border: solid 1px black;
+    left: 18px;
+    opacity: 0.8;
+    border-radius: 0 0px 20px 20px;
+    transform: translateY(-250px);
+    position: absolute;
+    transition: box-shadow 0.5s;
+    z-index: 1;
+
+
+}
+
+.covertitle {
+    height: max-content;
+    color: darkred;
+    width: max-content;
+    border: solid 6px darkred;
+    border-radius: 16px;
+    padding: 4px;
+    font-size: 34px;
+    margin-left: auto;
+
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    background: lightsalmon;
+    transform:perspective(1000px) rotateY('45deg');
+
+}
+
+.cover:hover .covertitle {
+    opacity: 1.0
+}
+
+.booktitle {
+    height: max-content;
+
+    color: darkred;
+    width: max-content;
+    border: solid 6px darkred;
+    border-radius: 16px;
+    padding: 4px;
+    font-size: 34px;
+
+    margin-left: auto;
+    transform: translateY(-258px);
+    opacity: 0.5;
+    transition: opacity 0.5s;
+
+}
+
+.booktitle:hover {
+    opacity: 1.0;
+}
+
+.bookmark:hover {
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+.bookwaist{
+    transform: rotate(90deg) translate(159px, -201px);; 
+    transform-origin: 0% 0px;
+
+	height:0;
+	width:50px;
+	border-top:100px solid #e5c3b2;
+	border-left:20px solid transparent;
+	border-right:20px solid transparent;
+
+}
+
+
+
+
+
+
+.storyin{
+    transform: rotateY(180deg);
+    font-size: 17px;
+}
+/* .rightcover{
+    width: 200px;
+    height: 250px;
+    } */
+    .bookbackpage{
+        width: 211px;
+        height: 250px;
+        background: rgb(206, 177, 47);
+        position: absolute;
+        top: 15px;
+        z-index: -12;
+        left: -13;
+        border-radius:0px 1px 22px 16px;;
+        background-image: url(../img/bookcube.png);
+       
+      }
+
+      .titleimage{
+        width: 150px;
+        height: 150px;
+        margin: 17px;
+        border: 10px solid;
+        border-radius: 19px;
+      }
+
+      .booktitleonfront {
+        height: max-content;
+        color: gray;
+        width: max-content;
+       
+        border-radius: 16px;
+        padding: 4px;
+        font-size: 34px;
+        margin-left: auto;
+        transform: translateY(-24px);
+       
+      }
+      .frontmask{
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        background-image: url('../img/frontmask.png');
+      }
+
+      .bookborder{
+        width: 300px;
+        height: 300px;
+        /* background: radial-gradient(circle,#000,#6A8372,#0D5661); */
+        background-image: url('../img/booksket.jpg');
+        position: absolute;
+        top: -15px;
+        z-index: -14;
+        left: -61px;
+        border-radius: 10%;
+        /* border: black 2px solid; */
+        transform: rotateZ(78deg);
+ 
+      
+      
+      }
+      .bookborder2{
+        width: 300px;
+        height: 300px;
+        /* background: radial-gradient(circle,#000,#6A8372,#0D5661); */
+        background-image: url('../img/booksket.jpg');
+        position: absolute;
+        top: -15px;
+        z-index: -13;
+        left: -61px;
+        border-radius: 10%;
+        /* border: black 2px solid; */
+        transform: rotateZ(33deg);
+      
+   
+    }
+    .bookborder3{
+        width: 29PX;
+        height: 29PX;
+        background: rgba(0, 0, 0);
+        position: absolute;
+        top: 249px;
+        z-index: -12;
+        left: 47PX;
+        TRANSFORM: rotatez(45deg);
+    }
+      
+      
+      
