@@ -50,8 +50,8 @@ let charater_middleWater = [{
         轄區與北災保區重疊(大安、松山、信義區)`,
     }, {
         name: "席 良名",
-        img: 'Img/head/north-shi.png',
-        bodyimg: 'Img/body/north-shi.jpg',
+        img: 'img/head/north-shi.png',
+        bodyimg: 'img/body/north-shi.jpg',
         discrip: `
         桂仙籍，民國後入仙班，台北省城隍。\n  
         僅修仙三年就擔任省級城隍，\n
@@ -66,8 +66,8 @@ let charater_middleWater = [{
         `,
     }, {
         name: "趙 凜德",
-        img: 'Img/head/north06-du.png',
-        bodyimg: 'Img/body/north06-du.jpg',
+        img: 'img/head/north06-du.png',
+        bodyimg: 'img/body/north06-du.jpg',
         discrip: `
         零期仙班出身，官位城隍。\n
         出生帝王之家但母親是棄妃，善交際與談判，\n
@@ -79,7 +79,7 @@ let charater_middleWater = [{
         `,
     }, {
         name: "李 正成",
-        img: 'Img/head/north03-lee.png',
+        img: 'img/head/north03-lee.png',
         discrip: `
         物妖，正成牌腳踏車，\n
         北災禍第三候補，生於四六事件，\n
@@ -96,8 +96,8 @@ let charater_middleWater = [{
         `,
     }, {
         name: "陳 緝示",
-        img: 'Img/head/north16-chan.png',
-        bodyimg: 'Img/body/north16-chan.jpg',
+        img: 'img/head/north16-chan.png',
+        bodyimg: 'img/body/north16-chan.jpg',
         discrip: `
         物妖，日本警刀，北災禍第十六候補，生於基隆大屠殺，\n
         其主陳緝示為了爭取市民安全，隻身對抗了拿槍的官兵，\n
@@ -109,7 +109,7 @@ let charater_middleWater = [{
     },
     {
         name: "初響",
-        img: 'Img/head/north19-cu.png',
+        img: 'img/head/north19-cu.png',
         discrip: `
         物妖，二二八事件，用來掃射抗議民眾的槍，北災禍第十九候補，\n
         因為造成多人死亡，歸類為災禍，\n
@@ -117,7 +117,7 @@ let charater_middleWater = [{
         `,
     }, {
         name: "雅提",
-        img: 'Img/head/north09-yati.png',
+        img: 'img/head/north09-yati.png',
         discrip: `
         物妖，電腦，北災禍第九候補，\n
         目前台灣最新的物妖，\n
@@ -126,7 +126,7 @@ let charater_middleWater = [{
     },
     {
         name: "羨魚",
-        img: 'Img/head/north17-envy.png',
+        img: 'img/head/north17-envy.png',
         discrip: `
         大白鷺妖，北災禍十七候補，自認守護對象是非人生物，\n
         擔任北投、士林區城隍。\n
@@ -144,7 +144,7 @@ let charater_middleWater = [{
 `,
     }, {
         name: "楊 孟章",
-        img: 'Img/head/north00-janbin.png',
+        img: 'img/head/north00-janbin.png',
         discrip: `
         二郎神，曾為一代銀鎧將軍\n
         林爽文事件時到台灣來，被年掏去內丹而瀕死，\n
@@ -187,7 +187,7 @@ let charater_middleWater = [{
         [
             {
                 name: "朱 一貴",
-                img: 'Img/head/south00-master.png',
+                img: 'img/head/south00-master.png',
                 discrip: `
         南災禍主，紅衣厲鬼，溺女嬰的犧牲者，\n
         是謝誓鳴在嘉義任職城隍時，為了抵禦年災而扶植的災禍主，\n
@@ -200,7 +200,7 @@ let charater_middleWater = [{
             `,
             }, {
                 name: "洪 星軌",
-                img: 'Img/head/south-sin.png',
+                img: 'img/head/south-sin.png',
                 discrip: `
         零期仙班出身，官位孟婆，溺女嬰靈的監護人，\n
         由於本為戲班長子，對照顧幼童很有一套。\n
@@ -209,7 +209,7 @@ let charater_middleWater = [{
             `,
             }, {
                 name: "竹青",
-                img: 'Img/head/south-bamboo.png',
+                img: 'img/head/south-bamboo.png',
                 discrip: `
         半仙半年，台南府城隍，\n
         台灣三大省級城隍之一，\n
@@ -221,8 +221,8 @@ let charater_middleWater = [{
             `,
             }, {
                 name: "利普努",
-                img: 'Img/head/south-lipunu.png',
-                bodyimg: 'Img/body/south-lipunu.jpg',
+                img: 'img/head/south-lipunu.png',
+                bodyimg: 'img/body/south-lipunu.jpg',
                 discrip: ` 
         魯凱族人，西魯凱貴族，\n
         漢名趙麒紋，存在時間相當於北宋時期，\n
@@ -238,7 +238,7 @@ let charater_middleWater = [{
             `,
             }, {
                 name: "陳 念澄",
-                img: 'Img/head/south00-chang.png',
+                img: 'img/head/south00-chang.png',
                 discrip: ` 
         物妖，町中的嘉義，生於嘉義民兵事件。\n
             `,
@@ -265,7 +265,7 @@ let charater_middleWater = [{
         [
             {
                 name: "薩摩亞",
-                img: 'Img/head/west-master.png',
+                img: 'img/head/west-master.png',
                 discrip: `
     西災禍主，巴宰族傳說中的巫婆，\n
     有夜視能力，能操控蕉葉飛行。\n
@@ -285,7 +285,7 @@ let charater_middleWater = [{
         [
             {
                 name: "希．\n瑪拉歐斯",
-                img: 'Img/head/east-master.png',
+                img: 'img/head/east-master.png',
                 discrip: `
     東災禍主，珠光鳳蝶，達悟族傳說中的惡靈，\n
     曾有人用身體、名字、拼板舟......等二十一個項目\n
@@ -296,8 +296,8 @@ let charater_middleWater = [{
         `,
             }, {
                 name: `潔儂．\n史特培茵`,
-                img: 'Img/head/east-jano.png',
-                bodyimg: 'Img/body/east-jano.jpg',
+                img: 'img/head/east-jano.png',
+                bodyimg: 'img/body/east-jano.jpg',
                 discrip: `
     聖經神話大惡魔，蘭嶼駐守災禍，\n
     為了搶奪災契而來，\n
@@ -306,8 +306,8 @@ let charater_middleWater = [{
         `,
             }, {
                 name: `瑪麗亞．\n阿切爾`,
-                img: 'Img/head/east-malia.png',
-                bodyimg: 'Img/body/east-malia.jpg',
+                img: 'img/head/east-malia.png',
+                bodyimg: 'img/body/east-malia.jpg',
                 discrip: `
     聖經神話大天使，蘭嶼的駐守天使，\n
     二戰後出生，沒經歷過神話大戰，\n
@@ -327,7 +327,7 @@ let charater_middleWater = [{
         [
             {
                 name: "無頭將軍",
-                img: 'Img/head/jima00-master.png',
+                img: 'img/head/jima00-master.png',
                 discrip: `
         金馬災禍主，生於無頭部隊的傳說，\n
         被水鬼摸去頭顱的士兵，對某人的思念遺留在人間的集合體\n
@@ -338,7 +338,7 @@ let charater_middleWater = [{
             `,
             }, {
                 name: `忠魂`,
-                img: 'Img/head/north00-zonhun.png',
+                img: 'img/head/north00-zonhun.png',
 
                 discrip: `
         金門海邊的一顆珊瑚石，剛好每年都被撿為天堂路建材\n
@@ -374,7 +374,7 @@ let charater_middleWater = [{
             },
             {
                 name: "古流·\n韃努帕克",
-                img: 'Img/head/mount-piwan.png',
+                img: 'img/head/mount-piwan.png',
                 discrip: `
             排灣信仰區山神之一，生於對自然的崇敬，\n
             轄區接近邊界，和普拉努洋很早就認識
@@ -399,14 +399,14 @@ let charater_middleWater = [{
         [
             {
                 name: "黑羽 瞳",
-                img: 'Img/head/polic02-black.png',
+                img: 'img/head/polic02-black.png',
                 bodyimg: 'https://p2.bahamut.com.tw/HOME/creationCover/71/0003911471.JPG',
                 discrip: `
             神警偵查部隊，高天原神話中的鴉天狗。
                             `,
             }, {
                 name: "孔 天賜",
-                img: 'Img/head/polic-kon.png',
+                img: 'img/head/polic-kon.png',
                 discrip: `
             神警武裝部隊，天庭神話中的魯籍仙，\n
             武裝部隊中唯一的正派神話。\n
@@ -415,8 +415,8 @@ let charater_middleWater = [{
                             `,
             }, {
                 name: `愛得萊德\n‧阿切爾`,
-                img: 'Img/head/polic03-adlaida.png',
-                bodyimg: 'Img/body/polic03-adlaida.jpg',
+                img: 'img/head/polic03-adlaida.png',
+                bodyimg: 'img/body/polic03-adlaida.jpg',
                 discrip: `
             神警醫療部隊，聖經神話大天使，\n
             曾到蘭嶼島上找神約，跟東災禍主照過面，\n
@@ -440,8 +440,8 @@ let charater_crosswindow = [{
     chaterdetail: [
         {
             name: `許 千菱`,
-            img: 'Img/head/polic03-adlaida.png',
-            bodyimg: 'Img/body/polic03-adlaida.jpg',
+            img: 'img/head/polic03-adlaida.png',
+            bodyimg: 'img/body/polic03-adlaida.jpg',
             discrip: `
             神警醫療部隊，聖經神話大天使，\n
             曾到蘭嶼島上找神約，跟東災禍主照過面，\n

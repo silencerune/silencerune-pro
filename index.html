@@ -106,8 +106,8 @@
 
                 <div class="bookshore">
                     <single-book v-for="(bookItem,key2) in targetset.storysDetail" :background-image="bookItem.backgroundImage" :cover-name-Orign="bookItem.coverName"
-                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" v-on:click-story="storyPaper"
-                        v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
+                        :story-introduction="bookItem.storyintroduction" :book-key="bookItem.keyfram" :link-url="bookItem.linkurl"
+                        v-on:click-story="storyPaper" v-on:click-comic="comiclink" v-on:click-char="charater"></single-book>
                 </div>
 
             </el-tab-pane>
@@ -136,17 +136,17 @@
             },
             methods: {
                 storyPaper(covername) {
-                    this.dialogVisible = true;
-                    this.storyTarget = covername.split('-');
-                    this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
-                    console.log(this.storySerise[this.storyTarget[0] - 1].chaterAll);
+
                     // alert(covername + 'paper')
                 },
                 comiclink(covername) {
                     alert(covername + 'link')
                 },
                 charater(covername) {
-                    alert(covername + 'char')
+                    this.dialogVisible = true;
+                    this.storyTarget = covername.split('-');
+                    this.charaterList = this.storySerise[this.storyTarget[0] - 1].chaterAll
+                    console.log(this.storySerise[this.storyTarget[0] - 1].chaterAll);
                 },
                 handleClose(done) {
                     done();

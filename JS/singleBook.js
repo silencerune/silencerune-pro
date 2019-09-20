@@ -27,14 +27,14 @@ let templatecode = `
 
         </div>
 
-        <div class="page page1 paper" v-bind:style="page1">page1</div>
-        <div class="page page1 paper" v-bind:style="page2">page2</div>
-        <div class="page page1 paper" v-bind:style="page3">page3</div>
+        <div class="page page1 paper" v-bind:style="page1"></div>
+        <div class="page page1 paper" v-bind:style="page2"></div>
+        <div class="page page1 paper" v-bind:style="page3"></div>
         <div class="page page1 paper" v-bind:style="page4" @click="clicktargetBook('book')">
 
         </div>
 
-        <div class="bookmark" @click="$emit('click-comic',  bookKeyToken)">前往閱讀</div>
+        <a class="bookmark" :href="linkurlBaha" >前往閱讀</a>
         <div class="coverimage" v-bind:style="coverImagePic" @click="$emit('click-char',  bookKeyToken)">
             <span class="coverimagetext">人物一覽</span>
         </div>
@@ -59,7 +59,7 @@ let templatecode = `
 Vue.component('single-book', {
     template: templatecode
     ,
-    props: ['backgroundImage', 'coverNameOrign', 'storyIntroduction', 'bookKey'],
+    props: ['backgroundImage', 'coverNameOrign', 'storyIntroduction', 'bookKey', 'linkUrl'],
     delimiters: ['${', '}'],
     data: function () {
         return {
@@ -78,6 +78,7 @@ Vue.component('single-book', {
             },
             coverImagePic: { 'background-image': `url(${this.backgroundImage})` },
             coverName: this.coverNameOrign,
+            linkurlBaha: this.linkUrl,
             page1: { transform: '', 'z-index': 2 },
             page2: { transform: '', 'z-index': 2, },
             page3: { transform: '', 'z-index': 2, },

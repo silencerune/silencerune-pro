@@ -4,6 +4,7 @@ let bookData_middleWater = [
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/75/0003107775.PNG",
         coverName: "水中央",
         keyfram: '1-1',
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343422',
         storyintroduction: `
         小島上 水中央\n
         最和平的民族，最美麗的風景，\n
@@ -13,6 +14,7 @@ let bookData_middleWater = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/10/0003893810.JPG",
         coverName: "諸羅災誌",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=361590',
         keyfram: '1-2',
         storyintroduction: `
         小島上 水中央\n
@@ -27,6 +29,7 @@ let bookData_middleWater = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/71/0003911471.JPG",
         coverName: "竊凝語",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=394335',
         keyfram: '1-3',
         storyintroduction: `
         大樓高築，世界的語言相互影響，\n
@@ -41,11 +44,13 @@ let bookData_middleWater = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/14/0004293114.JPG",
         coverName: "狐與虎",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=384153',
         keyfram: '1-4',
         storyintroduction: `二郎神與狐仙的放閃生活`,
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/96/0003036396.PNG",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=343423',
         coverName: "番外篇",
         keyfram: '1-5',
         storyintroduction: `水中央系列的番外篇`,
@@ -61,6 +66,7 @@ let bookData_crossTheWindow = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/02/0003423702.JPG",
         coverName: "幽靈學長",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=351991',
         keyfram: '2-1',
         storyintroduction: `
         卒於民國78年的學長，
@@ -71,6 +77,7 @@ let bookData_crossTheWindow = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/46/0004486046.JPG",
         coverName: "屏幕那端",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=294136',
         keyfram: '2-2',
         storyintroduction: `
         名為許 千菱的工程師之日常\n
@@ -85,6 +92,7 @@ let bookData_short = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/77/0003467877.JPG",
         coverName: "忘川水",
+        linkurl: 'https://home.gamer.com.tw/creationDetail.php?sn=3467877',
         keyfram: '3-1',
         storyintroduction: `
         各類藥材，一瓢忘川水，\n
@@ -95,12 +103,14 @@ let bookData_short = [
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/98/0003596298.JPG",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=383445',
         coverName: "先知日常",
         keyfram: '3-2',
         storyintroduction: `先知日常`,
     },
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/01/0003683401.JPG",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=390202',
         coverName: "姊夫妹婿",
         keyfram: '3-3',
         storyintroduction: `差了20歲的姊夫與妹婿的歡樂日常`,
@@ -108,6 +118,7 @@ let bookData_short = [
     {
         backgroundImage: "https://p2.bahamut.com.tw/HOME/creationCover/95/0003590095.JPG",
         coverName: "雙婚契",
+        linkurl: 'https://home.gamer.com.tw/creationCategory.php?owner=chejia&c=383661',
         keyfram: '3-4',
         storyintroduction: `
         死生契闊，與子成說，真誠的誓言卻不被世界承認，\n
